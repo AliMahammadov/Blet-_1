@@ -1,0 +1,62 @@
+﻿@using WebApplication1.View_Models;
+
+@{
+    ViewData["Title"] = "Create";
+}
+@model CreatePostVM
+<div class="container">
+
+    <form method="post" enctype="multipart/form-data">
+        <!-- 2 column grid layout with text inputs for the first and last names -->
+        <div class="row mb-4">
+            <div class="col">
+                <div class="form-outline">
+                    <label class="form-label" for="form3Example1">ImgUrl</label>
+                    <input asp-for="ImgUrl" class="form-control" />
+                   
+                </div>
+                 <div class="form-outline">
+                    <label class="form-label" for="form3Example1">Title</label>
+                    <input asp-for="Title" class="form-control" />
+
+                </div>
+                 <div class="form-outline">
+                    <label class="form-label" for="form3Example1">About</label>
+                    <input asp-for="About" class="form-control" />
+
+                </div>
+                <div class="form-outline">
+                    <label class="form-label" for="form3Example1">Time</label>
+                    <input asp-for="Time" class="form-control" />
+
+                </div>
+                
+            </div>
+        </div>
+        <!-- Submit button -->
+        <button type="submit" class="btn btn-primary btn-block mb-4">Sign up</button>
+
+        <!-- Register buttons -->
+        <div class="text-center">
+            <p>or sign up with:</p>
+            <button type="button" class="btn btn-secondary btn-floating mx-1">
+                <i class="fab fa-facebook-f"></i>
+            </button>
+
+            <button type="button" class="btn btn-secondary btn-floating mx-1">
+                <i class="fab fa-google"></i>
+            </button>
+
+            <button type="button" class="btn btn-secondary btn-floating mx-1">
+                <i class="fab fa-twitter"></i>
+            </button>
+
+            <button type="button" class="btn btn-secondary btn-floating mx-1">
+                <i class="fab fa-github"></i>
+            </button>
+        </div>
+    </form>
+</div>
+
+
+
